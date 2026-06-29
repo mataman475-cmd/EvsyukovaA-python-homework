@@ -8,7 +8,7 @@ driver = webdriver.Chrome()
 try:
     driver.get('https://bonigarcia.dev/selenium-webdriver-java/loading-images.html')
 
-    # Ждем, пока загрузится хотя бы 3 картинки
+    # Ждем, пока загрузится хотя бы 4 картинки
     WebDriverWait(driver, 10).until(
         lambda d: len(d.find_elements(By.TAG_NAME, 'img')) >= 4
     )
